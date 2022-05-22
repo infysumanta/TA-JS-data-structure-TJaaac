@@ -1,9 +1,9 @@
 ```js
 let user = {
-  name: 'Arya',
-  sibling: ['Robb', 'Ryan', 'John'],
+  name: "Arya",
+  sibling: ["Robb", "Ryan", "John"],
 };
-let allBrothers = ['Robb', 'Ryan', 'John'];
+let allBrothers = ["Robb", "Ryan", "John"];
 let brothersCopy = user.sibling;
 let usename = user.name;
 let newUser = user;
@@ -14,22 +14,22 @@ let newUser = user;
 - Create the memory representation of the above snippet on notebook.
 - Take a photo/screenshot and add it to the folder `code`
 
-<!-- To add this image here use ![name](./hello.jpg) -->
+![Memory representation](./hello.png)
 
 2. Answer the following with reason:
 
-- `user == newUser;` // output and reason
-- `user === newUser;`
-- `user.name === newUser.name;`
-- `user.name == newUser.name;`
-- `user.sibling == newUser.sibling;`
-- `user.sibling === newUser.sibling;`
-- `user.sibling == allBrothers;`
-- `user.sibling === allBrothers;`
-- `brothersCopy === allBrothers;`
-- `brothersCopy == allBrothers;`
-- `brothersCopy == user.sibling;`
-- `brothersCopy === user.sibling;`
-- `brothersCopy[0] === user.sibling[0];`
-- `brothersCopy[1] === user.sibling[1];`
-- `user.sibling[1] === newUser.sibling[1];`
+- `user == newUser;` // true - as the value of user is been stored in newUser.
+- `user === newUser;` // true - as the value of user is been stored in newUser.
+- `user.name === newUser.name;` // true - as the value of user.name and newUser.name is same.
+- `user.name == newUser.name;` // true - as the value of user.name and newUser.name is same.
+- `user.sibling == newUser.sibling;` // true - as the value of user.sibling and newUser.sibling is same.
+- `user.sibling === newUser.sibling;` // true - as the value of user.sibling and newUser.sibling is same.
+- `user.sibling == allBrothers;` // false - as they point towards different memory location.
+- `user.sibling === allBrothers;` // false - as they point towards different memory location.
+- `brothersCopy === allBrothers;` // false - as they point towards different memory location.
+- `brothersCopy == allBrothers;` // false - as they point towards different memory location.
+- `brothersCopy == user.sibling;` // true - as the value of brothersCopy and user.sibling is same.
+- `brothersCopy === user.sibling;` // true - as the value of brothersCopy and user.sibling is same.
+- `brothersCopy[0] === user.sibling[0];` // true - as the value of brothersCopy and user.sibling is same.
+- `brothersCopy[1] === user.sibling[1];` // true - as the value of brothersCopy and user.sibling is same.
+- `user.sibling[1] === newUser.sibling[1];` // true - as the value of brothersCopy and user.sibling is same.
